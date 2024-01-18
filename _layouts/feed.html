@@ -1,0 +1,7 @@
+---
+layout: page
+---
+
+{% for post in site.posts %}
+  {% include article-preview.html img-url=post.image_url img-alt=post.image_alt title=post.title subtitle=post.subtitle %}
+{% endfor %}

@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "tallneck"
+  spec.name          = "jekyll-theme-tallneck"
   spec.version       = "0.1.0"
   spec.authors       = ["John Toniutti"]
   spec.email         = ["john.toniutti@gmail.com"]
 
-  spec.summary       = "This is a minimalist website with dark mode support"
+  spec.summary       = "A minimalist Jekyll theme with dark mode support."
   spec.homepage      = "https://jotone.it"
   spec.license       = "MIT"
 
