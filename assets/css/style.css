@@ -172,18 +172,21 @@ header nav ul li a:hover {
     width: fit-content;
 }
 
-.header__logo svg {
-    vertical-align: middle !important;
-    width: 32px;
-    height: 32px;
-    fill: #fefefe;
+
+.header__logo__img {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
 }
 
-.header__logo :hover {
-    color: #cacaca;
-    fill: #cacaca;
+.header__logo__img:hover {
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
 }
-
 
 /*
   Content
