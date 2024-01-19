@@ -1,8 +1,9 @@
 name: Ruby Gem
 
 on:
-  release:
-    types: [published]
+  push:
+    tags:        
+      - '**'
 
 jobs:
   build:
