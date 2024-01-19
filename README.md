@@ -24,9 +24,56 @@ Or install it yourself as:
 
     $ gem install jekyll-theme-tallneck
 
+
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+### Customization
+
+Create a folder named `assets` in your Jekyll site's root directory.
+Then create a folder named `images` inside the `assets` folder and put a replacement for the default banner image named `banner.png` (1200x630) inside it.
+
+After that, replace the `favicon.ico` and `favicon.svg` file in the root directory with your own favicon.
+
+Then, configure the various plugins in `_config.yml` to your liking. The plugins are:
+
+- [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
+- [jekyll-toc](https://github.com/toshimaru/jekyll-toc)
+- [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
+
+### Main pages
+
+Create at the root of your Jekyll site the following pages:
+
+- `about.md`, which will be the About page and set the permalink to `/about`
+- `contact.md`, which will be the Contact page and set the permalink to `/contact`
+- `cookie.md`, which will be the Cookie Policy page and set the permalink to `/cookie`
+- `privacy.md`, which will be the Privacy Policy page and set the permalink to `/privacy`
+- `terms.md`, which will be the Terms of Service page and set the permalink to `/terms`
+
+Also create the file `404.html` with the following content:
+
+```yaml
+---
+layout: 404
+sitemap: false
+---
+```
+
+### Writing posts
+
+To create a new post, add a markdown file in the `_posts` directory and add at the top of the file the following:
+
+```yaml
+---
+layout: post
+title:  "First post!"
+subtitle: "Written in Go."
+date:   2023-01-16 17:40:28 +0100
+image:
+    path: /assets/images/golang.jpg
+    alt: golang logo
+---
+```
 
 ## Development
 
