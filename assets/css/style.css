@@ -25,7 +25,7 @@
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 100%;
-    min-width: 200px;
+    min-width: 270px;
 }
 
 body {
@@ -66,6 +66,7 @@ small {
 a {
     text-decoration: none;
     color: #000;
+    word-break: break-all;
 }
 
 a:hover {
@@ -267,6 +268,31 @@ header nav ul li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 870px) {
+    .post-preview__box__image {
+        display: none;
+    }
+    
+    .post-preview__box__content__title {
+        margin-bottom: 0.2em;
+        margin-top: 0.2em;
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .post-preview__box__image {
+        display: none;
+    }
+    
+    .post-preview__box__content__title {
+        margin-bottom: 0.2em;
+        margin-top: 0.2em;
+        font-size: 1.2rem;
+    }
 }
 
 .post-preview__box__content {
