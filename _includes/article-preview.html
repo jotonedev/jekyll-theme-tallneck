@@ -1,9 +1,20 @@
-<div class="post-preview">
-    <div class="post-image">
-        <img src="{{ include.img-url }}" alt="{{ include.img-alt }}">
+<a class="post-preview__box" href="{{ include.url | relative_url }}">
+    <div class="post-preview__box__image">
+        {% if include.image %}
+        <img src="{{ include.image | relative_url }}" alt="{{ include.alt }}">
+        {% else %}
+        <img src="{{ '/assets/images/banner.png' | relative_url }}" alt="Website logo">
+        {% endif %}
     </div>
-    <div class="post-content">
-        <h2 class="post-title">{{ include.title }}</h2>
-        <p class="post-subtitle">{{ include.subtitle }}</p>
+    <div class="post-preview__box__content">
+        <h2 class="post-preview__box__content__title">{{ include.title }}</h2>
+        {% if include.date %}
+        <small class="post-preview__box__content__date">{{ include.date | date: "%-d %B %Y" }}</small>
+        {% endif %}
+        {% if include.author %}
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <span class="post-preview__box__content__author">{{ include.author }}</span>
+        {% endif %}
+        <p class="post-preview__box__content__description">{{ include.subtitle }}</p>
     </div>
-</div>
+</a>

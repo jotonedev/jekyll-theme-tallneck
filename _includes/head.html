@@ -9,42 +9,8 @@
     
     {% seo %}
 
-    <title>{{ site.title }}</title>
-    
+    <link rel="icon" href="{{ "{{ site.favicon_ico | relative_url }}" | relative_url }}" sizes="any">
+    <link rel="icon" href="{{ "{{ site.favicon | relative_url }}" | relative_url }}" type="image/svg+xml">
 
-    {% capture author %}
-      {%- if page.author -%}
-        {{  page.author | strip_html }}
-      {%- elsif site.author -%}
-        {{ site.author }}
-      {%- endif -%}
-    {% endcapture %}
-    <meta name="author" content="{{ author }}">
-
-    {% capture description %}
-      {%- if page.share-description -%}
-        {{ page.share-description | strip_html | xml_escape }}
-      {%- elsif page.subtitle -%}
-        {{ page.subtitle | strip_html | xml_escape }}
-      {%- else -%}
-        {%- assign excerpt_length = site.excerpt_length | default: 50 -%}
-        {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length | strip }}
-      {%- endif -%}
-    {% endcapture %}
-    <meta name="description" content="{{ description }}">
-
-    <link rel="icon" href="/static/favicon.ico" sizes="any">
-    <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
-    <link rel="mask-icon" href="/static/icons/safari-pinned-tab.svg" color="white">
-    <link rel="apple-touch-icon" href="/static/icons/apple-touch-icon.png">
-    
-
-    {{if .NoRobots}}
-        <meta name="robots" content="noindex,nofollow">
-    {{else}}
-        <meta name="robots" content="index,follow">
-    {{end}}
-
-    <link rel="preload" href="{{ "/assets/font/roboto.woff2" | relative_url }}" as="font" type="font/woff2">
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 </head>

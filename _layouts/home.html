@@ -3,3 +3,9 @@ layout: page
 ---
 
 {{ content }}
+
+<div class="post-preview" style="margin-top: 3rem;">
+  {% for post in site.posts limit: 5 %}
+    {% include article-preview.html author=post.author image=post.image.path alt=post.image.alt title=post.title subtitle=post.subtitle tags=post.tags url=post.url %}
+  {% endfor %}
+</div>

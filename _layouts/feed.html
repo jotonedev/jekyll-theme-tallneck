@@ -2,6 +2,8 @@
 layout: page
 ---
 
-{% for post in site.posts %}
-  {% include article-preview.html img-url=post.image_url img-alt=post.image_alt title=post.title subtitle=post.subtitle %}
-{% endfor %}
+<div class="post-preview">
+    {% for post in site.posts %}
+      {% include article-preview.html author=post.author image=post.image.path alt=post.image.alt title=post.title subtitle=post.subtitle date=post.date tags=post.tags url=post.url %}
+    {% endfor %}
+</div>
