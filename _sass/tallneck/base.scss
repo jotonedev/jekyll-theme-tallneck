@@ -1,0 +1,93 @@
+/*
+ * Base
+*/
+html {
+    min-height: 100vh;
+    min-height: 100svh;
+    min-width: 320px;
+}
+
+body {
+    height: 100%;
+
+    font-size: $base-font-size;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    color: var(--text-primary);
+    
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--background-color);
+
+    overflow-x: hidden;
+}
+
+main {
+    display: block;
+
+    box-sizing: border-box;
+    padding: 2rem 2rem 1rem 2rem;
+
+    max-width: $content-width;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--text-link);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-block-start: 0rem;
+}
+
+h2, h3, h4, h5, h6, p {
+    margin-block-start:.5rem;
+    margin-block-end:.5rem;
+}
+
+
+/*
+ * Code
+*/
+pre,
+code {
+    font-family: $code-font-family;
+    font-size: 0.9em;
+    border: 1px solid var(--border-secondary);
+    border-radius: 3px;
+    background-color: var(--code-background-color);
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: auto;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.highlight {
+    border-radius: 3px;
+    background: var(--code-background-color);
+
+    .highlighter-rouge & {
+        background: var(--code-background-color);
+    }
+}

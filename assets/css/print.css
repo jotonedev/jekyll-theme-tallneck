@@ -1,0 +1,16 @@
+@media print {
+    header {
+        display: none !important;
+    }
+
+    footer {
+        display: none !important;
+    }
+}
+
+
+@media print {
+    .no_print, .no_print * {
+        display: none !important;
+    }
+}

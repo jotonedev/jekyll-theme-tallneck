@@ -87,3 +87,7 @@ To add a custom directory to your theme-gem, please edit the regexp in `jotone_t
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## Credits
+
+Some of the code was inspired by the [Minima Theme](https://github.com/jekyll/minima). [Minima license](https://github.com/jekyll/minima/blob/master/LICENSE.txt).

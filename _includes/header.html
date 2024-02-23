@@ -1,12 +1,15 @@
-<header class="no_print">
-    <a href="{{ '/' | relative_url }}" class="header__logo" aria-label="Home">
-        <img src="{{ site.favicon | relative_url }}" width="32" height="32" alt="Website logo" class=".header__logo__img">
-    </a>
-    <nav>
-        <ul>
-            <li>
-                <a href="{{ '/feed' | relative_url }}">All Posts</a>
-            </li>
-        </ul>
+<header class="page-header">
+<div class="page-header--container">
+    <div class="header-logo">
+        <a href="{{ '/' | relative_url }}" aria-label="Home">
+            <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="Website logo">
+        </a>
+    </div>
+    
+    <nav class="header-nav">
+        <a href="{{ '/feed' | relative_url }}">Posts</a>
+        <a href="{{ '/projects' | relative_url }}">Projects</a>
+        <a href="{{ '/about' | relative_url }}">About me</a>
     </nav>
+</div>
 </header>

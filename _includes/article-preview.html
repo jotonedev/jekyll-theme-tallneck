@@ -16,5 +16,10 @@
         <span class="post-preview__box__content__author">{{ include.author }}</span>
         {% endif %}
         <p class="post-preview__box__content__description">{{ include.subtitle }}</p>
+        <div class="post-preview__box__content__tags">
+            {% for tag in include.tags %}
+            <span class="post-preview__box__content__tags__tag">{{ tag }}</span>
+            {% endfor %}
+        </div>
     </div>
 </a>
