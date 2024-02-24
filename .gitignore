@@ -61,3 +61,4 @@ _site/
 .jekyll-metadata
 
 *.pdn
+.idea/
