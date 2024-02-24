@@ -11,13 +11,19 @@ url: "https://jotonedev.github.io/tallneck-test"
 
 defaults:
   - scope:
-      path: ""
       type: "posts"
     values:
       layout: "post"
       image: "/assets/images/default.webp"
       seo:
         type: BlogPosting
+  - scope:
+      type: "projects"
+    values:
+      layout: "project"
+      image: "/assets/images/default.webp"
+      seo:
+        type: CreativeWork
 
 sitemap: true
 

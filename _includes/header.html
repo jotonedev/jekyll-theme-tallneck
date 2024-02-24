@@ -1,15 +1,15 @@
 <header class="page-header">
-<div class="page-header--container">
-    <div class="header-logo">
-        <a href="{{ '/' | relative_url }}" aria-label="Home">
-            <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="Website logo">
-        </a>
+    <div class="page-header--container">
+        <div class="header-logo">
+            <a aria-label="Home" href="{{ '/' | relative_url }}">
+                <img alt="Website logo" src="{{ '/assets/images/logo.svg' | relative_url }}"
+            </a>
+        </div>
+
+        <nav class="header-nav">
+            <a href="{{ '/feed' | relative_url }}">Posts</a>
+            <a href="{{ '/projects' | relative_url }}">Projects</a>
+            <a href="{{ '/about' | relative_url }}">About me</a>
+        </nav>
     </div>
-    
-    <nav class="header-nav">
-        <a href="{{ '/feed' | relative_url }}">Posts</a>
-        <a href="{{ '/projects' | relative_url }}">Projects</a>
-        <a href="{{ '/about' | relative_url }}">About me</a>
-    </nav>
-</div>
 </header>

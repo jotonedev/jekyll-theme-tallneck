@@ -2,7 +2,7 @@
 layout: base
 ---
 
-<div id="content" class="container content" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="container content" id="content" itemscope itemtype="http://schema.org/BlogPosting">
     <h1 itemprop="name headline">{{ page.title }}</h1>
     <p class="content__info">
         <time datetime="{{ date | date_to_xmlschema }}" itemprop="datePublished">
@@ -15,9 +15,10 @@ layout: base
         </span>
         {% endif %}
         <br>
-        This work is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+        This work is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution
+        4.0 International License</a>.
     </p>
-    
+
     <div itemprop="articleBody">
         {{ content }}
     </div>

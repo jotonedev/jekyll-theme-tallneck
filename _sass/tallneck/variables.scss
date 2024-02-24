@@ -5,61 +5,67 @@
 // Define defaults for each variable.
 $base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;
 $code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
-$base-font-size:   16px !default;
+$base-font-size: 16px !default;
 $base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.75 !default;
+$small-font-size: $base-font-size * 0.75 !default;
 $base-line-height: 1.5 !default;
 
-$spacing-unit:     30px !default;
+$spacing-unit: 30px !default;
 
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    900px !default;
+$content-width: 900px !default;
 $content-width-overflow: 60px !default;
+
+$card-max-width: max(200px, calc($content-width / 2.5)) !default;
+$card-height: 440px !default;
 
 
 // Colors
 :root {
-    --background-color: #fff;
+  --background-color: #fff;
 
-    --text-primary: #1b1b1b;
-    --text-secondary: #282828;
-    --text-link: #8cb4ff;
+  --text-primary: #1b1b1b;
+  --text-secondary: #282828;
+  --text-link: #005b9f;
 
-    --card-background-primary: #ececec;
-    --card-background-secondary: #c8c8c8;
+  --card-background-primary: #ececec;
+  --card-background-secondary: #c8c8c8;
 
-    --code-background-color: #f8f8f8;
+  --code-background-color: #f8f8f8;
 
-    --border-primary: #777;
-    --border-secondary: #ddd;
+  --border-primary: #777;
+  --border-secondary: #ddd;
 
-    --header-background: #282828;
-    --header-text-primary: #f4f4f4;
+  --header-background: #282828;
+  --header-text-primary: #f4f4f4;
 
-    --hr-nav-hov: #777777aa;
+  --hr-nav-hov: #777777aa;
 
-    --svg-fill: #000;
+  --svg-fill: #000;
+
+  --accent-primary: #FE7A36;
+  --accent-secondary: #3652AD;
 }
 
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --background-color: #121212;
+  :root {
+    --background-color: #121212;
 
-        --text-primary: #f4f4f4;
-        --text-secondary: #d4d4d4;
-        --text-link: #0069c2;
-    
-        --card-background-primary: #343434;
-        --card-background-secondary: #6b6b6b;
+    --text-primary: #f4f4f4;
+    --text-secondary: #d4d4d4;
+    --text-link: #4faeff;
 
-        --code-background-color: #2a2a2a;
-    
-        --border-primary: #444;
-        --border-secondary: #222222;
+    --card-background-primary: #343434;
+    --card-background-secondary: #6b6b6b;
 
-        --svg-fill: #fff;
-    }
+    --code-background-color: #2a2a2a;
+
+    --border-primary: #444;
+    --border-secondary: #222222;
+
+    --svg-fill: #fff;
+  }
 }
