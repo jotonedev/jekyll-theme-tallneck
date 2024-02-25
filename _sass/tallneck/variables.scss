@@ -15,11 +15,16 @@ $spacing-unit: 30px !default;
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width: 900px !default;
-$content-width-overflow: 60px !default;
+$main-max-width: 1200px !default;
+$content-width-overflow: 100px !default;
+$content-width: 1000px !default;
 
-$card-max-width: max(200px, calc($content-width / 2.5)) !default;
-$card-height: 440px !default;
+
+$card-max-width: 18rem !default;
+$card-min-width: 16rem !default;
+$card-max-height: 440px !default;
+
+$preview-max-height: 10rem !default;
 
 
 // Colors
@@ -41,7 +46,8 @@ $card-height: 440px !default;
   --header-background: #282828;
   --header-text-primary: #f4f4f4;
 
-  --hr-nav-hov: #777777aa;
+  --nav-link-hover: #777777aa;
+  --link-hover: #777777aa;
 
   --svg-fill: #000;
 
@@ -63,8 +69,8 @@ $card-height: 440px !default;
 
     --code-background-color: #2a2a2a;
 
-    --border-primary: #444;
-    --border-secondary: #222222;
+    --border-primary: #4A4A4A;
+    --border-secondary: #393939;
 
     --svg-fill: #fff;
   }

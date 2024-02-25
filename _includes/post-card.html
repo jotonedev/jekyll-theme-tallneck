@@ -1,7 +1,7 @@
-<article class="post-card">
-<a href="{{ include.post.url | relative_url }}" class="post-card--link">
+<article class="post-card" id="{{ include.post.id }}">
+<a href="{{ include.post.url | relative_url }}" class="post-card--link post-card--flex">
     <div class="post-card--image">
-        <img src="{{ include.post.image | relative_url }}" alt="{{ include.post.title }}" height="400" width="900" aria-hidden="true">
+        <img src="{{ include.post.image | relative_url }}" alt="{{ include.post.title }}" aria-hidden="true">
     </div>
     <div class="post-card--content">
         <h2 class="post-card--title">{{ include.post.title }}</h2>
