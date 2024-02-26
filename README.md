@@ -58,7 +58,6 @@ Create at the root of your Jekyll site the following pages (like in this repo):
 - `privacy.md`, which will be the Privacy Policy page and set the permalink to `/privacy`
 - `terms.md`, which will be the Terms of Service page and set the permalink to `/terms`
 - `feed.md`, which will be Posts page and set the permalink to `/feed`.
-- `projects.md`, which will be the Projects page and set the permalink to `/projects`
 
 Also create the file `404.html` with the following content:
 

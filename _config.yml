@@ -17,13 +17,6 @@ defaults:
       image: "/assets/images/default.webp"
       seo:
         type: BlogPosting
-  - scope:
-      type: "projects"
-    values:
-      layout: "project"
-      image: "/assets/images/default.webp"
-      seo:
-        type: CreativeWork
 
 sitemap: true
 
@@ -38,8 +31,7 @@ sass:
   style: compressed
   sass_dir: _sass
 
-
-cloudflare: "bb92f520037c4286aea634050df09d74"
+#cloudflare: "bb92f520037c4286aea634050df09d74"
 
 # Project folder
 collections:
