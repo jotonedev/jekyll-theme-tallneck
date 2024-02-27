@@ -4,22 +4,22 @@ layout: base
 
 <h1>{{ page.title }}</h1>
 
-<section class="justify-text">
+<div class="justify-text">
 {{ content }}
-</section>
-
-<section>
-<h2><a href="{{ '/feed' | relative_url }}" class="hidden-link">Latest Posts</a></h2>
-<div class="post-card-container">
-    {% for post in site.posts limit: 4 %}
-        {% include post-card.html post=post %}
-    {% endfor %}
 </div>
 
-<div style="height: fit-content; align-items: center; text-align: center; margin: 3rem auto 0rem;">
-<a href="{{ '/feed' | relative_url }}" class="hidden-link hover-underline center">
-    <span>Read all posts →</span>
-</a>
+<div>
+    <h2><a href="{{ '/feed' | relative_url }}" class="hidden-link">Latest Posts</a></h2>
+    <div class="post-card-container">
+        {% for post in site.posts limit: 4 %}
+            {% include post-card.html post=post %}
+        {% endfor %}
+    </div>
+
+    <div style="height: fit-content; align-items: center; text-align: center; margin: 3rem auto 0rem;">
+        <a href="{{ '/feed' | relative_url }}" class="hidden-link hover-underline center">
+            <span>Read all posts →</span>
+        </a>
+    </div>
 </div>
-</section>
 
