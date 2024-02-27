@@ -7,6 +7,9 @@
   background-color: var(--header-background);
   color: var(--header-text-primary);
 
+  display: flex;
+  justify-content: center;
+
   border-bottom: 1px solid var(--border-secondary);
 
   padding: 0.3rem 1rem;
@@ -20,8 +23,6 @@
     height: 100%;
 
     max-width: $main-max-width - $content-width-overflow;
-    margin-left: auto;
-    margin-right: auto;
 
     display: flex;
     justify-content: space-between;
