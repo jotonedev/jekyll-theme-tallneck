@@ -9,7 +9,11 @@
     <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
     <meta name="theme-color" content="#282828"/>
 
-    {% seo %}
+    {% if page.private %}
+        <meta name="robots" content="noindex, nofollow">
+    {% else %}
+        {% seo %}
+    {% endif %}
 
     <!-- Preload -->
     <link rel="preload" as="style" href="{{ "/assets/css/style.css" | relative_url }}">
