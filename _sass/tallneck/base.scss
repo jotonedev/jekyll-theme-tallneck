@@ -70,6 +70,12 @@ section {
   margin-block-end: 1.5rem;
 }
 
+abbr[title] {
+  text-decoration: underline dotted;
+  cursor: help;
+  text-underline-offset: 2px;
+}
+
 
 /*
  * Code
