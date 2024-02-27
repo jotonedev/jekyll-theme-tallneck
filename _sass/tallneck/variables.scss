@@ -3,14 +3,11 @@
 @charset "utf-8";
 
 // Define defaults for each variable.
-$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;
-$code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+$base-font-family: "Open Sans", -apple-system, system-ui, sans-serif, Arial !default;
+$code-font-family: "Consolas", "Courier New", monospace !default;
 $base-font-size: 16px !default;
 $base-font-weight: 400 !default;
-$small-font-size: $base-font-size * 0.75 !default;
 $base-line-height: 1.5 !default;
-
-$spacing-unit: 30px !default;
 
 $table-text-align: left !default;
 
@@ -18,7 +15,6 @@ $table-text-align: left !default;
 $main-max-width: 1200px !default;
 $content-width-overflow: 100px !default;
 $content-width: 1000px !default;
-
 
 $card-max-width: 18rem !default;
 $card-min-width: 16rem !default;
@@ -42,6 +38,8 @@ $preview-max-height: 15rem !default;
 
   --border-primary: #777;
   --border-secondary: #ddd;
+
+  --blockquote-background: #f0f0f0;
 
   --header-background: #282828;
   --header-text-primary: #f4f4f4;
@@ -69,8 +67,10 @@ $preview-max-height: 15rem !default;
 
     --code-background-color: #2a2a2a;
 
-    --border-primary: #4A4A4A;
+    --border-primary: #747474;
     --border-secondary: #393939;
+
+    --blockquote-background: #1e1e1e;
 
     --svg-fill: #fff;
   }
