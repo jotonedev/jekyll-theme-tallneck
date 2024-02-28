@@ -2,6 +2,7 @@
 layout: post
 private: true
 no_meta: true
+sitemap: false
 title: Cookie policy
 ---
 

@@ -2,10 +2,7 @@
 
 Tallneck is a Jekyll theme for blogs. It is a simple and clean theme with a focus on the responsiveness. Also js free.
 
-## Preview
-
-Main branch: [main](https://jekyll-theme-tallneck.pages.dev/) \
-Dev branch: [dev](https://dev.jekyll-theme-tallneck.pages.dev/)
+Preview: [https://jotonedev.github.io/jekyll-theme-tallneck/](https://jotonedev.github.io/jekyll-theme-tallneck/)
 
 ## Installation
 
@@ -35,38 +32,37 @@ gem install jekyll-theme-tallneck
 
 ## Usage
 
-### Customization
+### Initial setup
 
-Create a folder named `assets` in your Jekyll site's root directory.
-Then create a folder named `images` inside the `assets` folder and put a replacement for the default image named `default.webp` or change its name in the `_config.yml` file.
+To set up your Jekyll site with the Tallneck theme, follow these steps:
 
-Then, configure the various plugins and the theme in `_config.yml` to your liking (you can use the [config](/_config.yml) file in this repo as a template).
-
-The preinstalled plugins are:
-
-- [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
-- [jekyll-feed](https://github.com/jekyll/jekyll-feed)
-- [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
-
-### Main pages
-
-Create at the root of your Jekyll site the following pages (like in this repo):
-
-- `index.md`, which will be the Home page and set the permalink to `/`
-- `about.md`, which will be the About page and set the permalink to `/about`
-- `cookie.md`, which will be the Cookie Policy page and set the permalink to `/cookie`
-- `privacy.md`, which will be the Privacy Policy page and set the permalink to `/privacy`
-- `terms.md`, which will be the Terms of Service page and set the permalink to `/terms`
-- `feed.md`, which will be Posts page and set the permalink to `/feed`.
-
-Also create the file `404.html` with the following content:
+1. Install the theme as described above.
+2. Add the following to your site's `_config.yml` to activate the theme:
 
 ```yaml
----
-layout: 404
-sitemap: false
----
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+theme: jekyll-theme-tallneck
 ```
+
+3. Create the following files at the root of your Jekyll site and edit them like the ones in this repo:
+    - [index.md](index.md)
+    - [feed.md](feed.md)
+    - [404.md](404.md)
+    - [about.md](about.md)
+    - [cookie.md](cookie.md)
+    - [privacy.md](privacy.md)
+    - [terms.md](terms.md)
+
+4. Create the `assets/images` folder and put a replacement for the default image named `default.webp` or change its name in the `_config.yml` file.
+5. In the same folder, put also a replacement for `favicon.ico`, `favicon.svg` and `logo.svg` (logo.svg will be used as the home button).
+6. [Optional] Customize the theme by creating the `_sass` folder and editing `custom_variables.scss` and `custom_styles.scss` files.
+7. Edit the `_config.yml` file to your liking (you can use the [config](/_config.yml) file in this repo as a template).
+
 
 ### Writing posts
 
