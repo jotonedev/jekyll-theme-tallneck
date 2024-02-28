@@ -3,18 +3,30 @@ language: en
 
 copyright: "Copyright (c) 2024 John Toniutti"
 
-# For jekyll-seo-tag
 author: John Toniutti
+keywords: "tallneck, test, jekyll, theme, jekyll-theme-tallneck"
 tagline: "Tallneck test | This a tagline"
 description: "This is a description"
 url: "https://jotonedev.github.io/tallneck-test"
 
+social: true
+github_url: https://example.com/
+gitlab_url: https://example.com/
+discord_url: https://example.com/
+linkedin_url: https://example.com/
+reddit_url: https://example.com/
+instagram_url: https://example.com/
+threads_url: https://example.com/
+x_url: https://example.com/
+telegram_url: https://example.com/
+
+about_image: "/assets/image/about.webp"
 defaults:
   - scope:
       type: "posts"
     values:
       layout: "post"
-      image: "/assets/images/default.webp"
+      image: "/assets/image/default.webp"
       seo:
         type: BlogPosting
 

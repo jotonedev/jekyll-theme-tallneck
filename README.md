@@ -58,7 +58,7 @@ theme: jekyll-theme-tallneck
     - [privacy.md](privacy.md)
     - [terms.md](terms.md)
 
-4. Create the `assets/images` folder and put a replacement for the default image named `default.webp` or change its name in the `_config.yml` file.
+4. Create the `assets/image` folder and put a replacement for the default image named `default.webp` or change its name in the `_config.yml` file.
 5. In the same folder, put also a replacement for `favicon.ico`, `favicon.svg` and `logo.svg` (logo.svg will be used as the home button).
 6. [Optional] Customize the theme by creating the `_sass` folder and editing `custom_variables.scss` and `custom_styles.scss` files.
 7. Edit the `_config.yml` file to your liking (you can use the [config](/_config.yml) file in this repo as a template).
@@ -74,7 +74,7 @@ layout: post   # Optional, post is default
 title:  "First post!"
 subtitle: "Written in Go."  # Optional
 date:   2023-01-16 17:40:28 +0100
-image: /assets/images/golang.jpg  # Optional
+image: /assets/image/golang.jpg  # Optional
 ---
 ```
 
