@@ -76,7 +76,6 @@ abbr[title] {
   text-underline-offset: 2px;
 }
 
-
 /*
  * Code
 */
@@ -113,7 +112,6 @@ pre {
   }
 }
 
-
 /*
  * Tables
 */
@@ -123,7 +121,8 @@ table {
   border-collapse: collapse;
   border: 1px solid var(--border-primary);
 
-  th, td {
+  th,
+  td {
     padding: 0.25rem;
     border: 1px solid var(--border-primary);
   }
@@ -132,7 +131,6 @@ table {
     background-color: var(--border-secondary);
   }
 }
-
 
 /*
  * Blockquotes
@@ -152,6 +150,5 @@ blockquote {
 
   & > blockquote {
     border-left: 3px solid var(--accent-secondary);
-    
   }
 }

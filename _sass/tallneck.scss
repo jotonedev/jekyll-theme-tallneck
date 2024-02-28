@@ -1,9 +1,14 @@
 @import "tallneck/font";
 @import "tallneck/variables";
+
+@import "custom_variables";
+
 @import "tallneck/base";
 @import "tallneck/layout";
 @import "tallneck/components";
 
+@import "custom_layout";
+
 // Source: https://jwarby.github.io/jekyll-pygments-themes/languages/ruby.html
-@import "colorful";
-@import "monokai";
+@import "light_code";
+@import "dark_code";

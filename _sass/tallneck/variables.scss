@@ -3,7 +3,12 @@
 @charset "utf-8";
 
 // Define defaults for each variable.
-$base-font-family: "Open Sans", -apple-system, system-ui, sans-serif, Arial !default;
+$base-font-family:
+  "Open Sans",
+  -apple-system,
+  system-ui,
+  sans-serif,
+  Arial !default;
 $code-font-family: "Consolas", "Courier New", monospace !default;
 $base-font-size: 15px !default;
 $base-font-weight: 400 !default;
@@ -21,7 +26,6 @@ $card-min-width: 16rem !default;
 $card-max-height: 440px !default;
 
 $preview-max-height: 15rem !default;
-
 
 // Colors
 :root {
@@ -49,10 +53,9 @@ $preview-max-height: 15rem !default;
 
   --svg-fill: #000;
 
-  --accent-primary: #FE7A36;
-  --accent-secondary: #3652AD;
+  --accent-primary: #fe7a36;
+  --accent-secondary: #3652ad;
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {
