@@ -5,4 +5,7 @@
         <a href="{{ '/cookie' | relative_url }}" rel="noopener noreferrer">Cookie</a>
         <a href="{{ '/terms' | relative_url }}" rel="noopener noreferrer">Terms</a>
     </nav>
+    {% if include.text %}
+    <p class="footer-text">{{include.text}}</p>
+    {% endif %}
 </footer>
