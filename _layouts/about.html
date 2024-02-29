@@ -9,7 +9,7 @@ layout: base
     {% endif %}
 
     {% if site.social %}
-    <nav class="about-social">
+    <nav class="about-social no_print">
         {% if site.github_url %}
         <a href="{{ site.github_url }}" title="GitHub" target="_blank" rel="noopener">
             <svg class="about-social--icon">
@@ -86,12 +86,21 @@ layout: base
             </svg>
         </a>
         {% endif %}
+
+        {% if site.email %}
+        <a href="mailto:{{ site.email }}" title="Email" target="_blank" rel="noopener">
+            <svg class="about-social--icon">
+                <use href="{{ "/assets/icon/mail.svg#mail" | relative_url }}" alt="Email">
+                </use>
+            </svg>
+        </a>
+        {% endif %}
     </nav>
     {% endif %}
 
     <div class="about">
         <div class="about--img">
-            <img src="{{ site.about_image | relative_url }}" alt="About me">
+            <img src="{{ site.about_image | relative_url }}" alt="About me" width="500px" height="500px">
         </div>
         <div class="about--content">
             {{ content }}

@@ -1,17 +1,3 @@
-// Source: https://fonts.google.com/specimen/Roboto
-@font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: normal;
-    font-display: swap;
-
-    src:
-        local("Roboto"),
-        /* Super Modern Browsers */ url("/assets/font/roboto/roboto.woff2") format("woff2"),
-        /* Modern Browsers */ url("/assets/font/roboto/roboto.woff") format("woff"),
-        /* Safari, Android, iOS */ url("/assets/font/roboto/roboto.ttf") format("truetype");
-}
-
 // Source: https://fonts.google.com/specimen/Open+Sans
 @font-face {
     font-family: "Open Sans";

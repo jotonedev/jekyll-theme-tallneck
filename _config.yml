@@ -10,6 +10,7 @@ description: "This is a description"
 url: "https://jotonedev.github.io/tallneck-test"
 
 social: true
+email: "test@example.com"
 github_url: https://example.com/
 gitlab_url: https://example.com/
 discord_url: https://example.com/
