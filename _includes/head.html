@@ -5,10 +5,7 @@
     <meta content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0" name="viewport">
     <meta content="#f0f0f0" media="(prefers-color-scheme: light)" name="theme-color">
     <meta content="#252525" media="(prefers-color-scheme: dark)" name="theme-color">
-    <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
-    <link rel="manifest" href="/assets/sitemanifest.json">
-    <meta name="theme-color" content="#282828"/>
 
     {% if page.private %}
         <meta name="robots" content="noindex, nofollow">
@@ -38,6 +35,13 @@
     <link rel="icon" href="{{ /assets/image/favicon.svg | relative_url }}" type="image/svg+xml">
     <link rel="icon" href="{{ /assets/image/favicon.ico | relative_url }}" sizes="any">
     
+    <!-- PWA -->
+    <meta name="theme-color" content="#282828"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="manifest" href="/assets/sitemanifest.json">
+    <link rel="apple-touch-icon" sizes="512x512" href="/assets/image/pwa_icon_x512.png">
+
     <!-- Analytics -->
     {% if site.cloudflare %}
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "{{ site.cloudflare }}"}'></script>
