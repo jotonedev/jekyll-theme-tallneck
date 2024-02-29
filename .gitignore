@@ -60,4 +60,6 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
-# End of https://mrkandreev.name/snippets/gitignore-generator/#Ruby,Jekyll
+*.pdn
+.idea/
+.vscode/

@@ -1,0 +1,53 @@
+title: Tallneck test
+language: en
+
+copyright: "Copyright (c) 2024 John Toniutti"
+
+author: John Toniutti
+keywords: "tallneck, test, jekyll, theme, jekyll-theme-tallneck"
+tagline: "Tallneck test | This a tagline"
+description: "Preview for the theme Tallneck for Jeckyll."
+url: "https://jotonedev.github.io/tallneck-test"
+
+social: true
+email: "test@example.com"
+github_url: https://example.com/
+gitlab_url: https://example.com/
+discord_url: https://example.com/
+linkedin_url: https://example.com/
+reddit_url: https://example.com/
+instagram_url: https://example.com/
+threads_url: https://example.com/
+x_url: https://example.com/
+telegram_url: https://example.com/
+
+about_image: "/assets/image/about.webp"
+defaults:
+  - scope:
+      type: "posts"
+    values:
+      layout: "post"
+      image: "/assets/image/default.webp"
+      seo:
+        type: BlogPosting
+
+sitemap: true
+
+seo:
+  type: BlogPosting
+
+feed:
+  posts_limit: 20
+
+sass:
+  style: compressed
+  sass_dir: _sass
+
+#cloudflare: "bb92f520037c4286aea634050df09d74"
+
+# Build settings
+theme: jekyll-theme-tallneck
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
