@@ -2,7 +2,7 @@
 
 Tallneck is a Jekyll theme for blogs. It is a simple and clean theme with a focus on the responsiveness. Also js free.
 
-Preview: [https://jotonedev.github.io/jekyll-theme-tallneck/](https://jotonedev.github.io/jekyll-theme-tallneck/)
+Preview: [https://jekyll-theme-tallneck.pages.dev/](https://jekyll-theme-tallneck.pages.dev/)
 
 ## Installation
 
