@@ -138,6 +138,10 @@ table {
 blockquote {
   margin-block-start: 1rem;
   margin-block-end: 1rem;
+
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+
   padding: 0.5rem 1rem;
 
   border-left: 5px solid var(--accent-primary);
@@ -150,5 +154,7 @@ blockquote {
 
   & > blockquote {
     border-left: 3px solid var(--accent-secondary);
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
   }
 }
