@@ -1,6 +1,12 @@
 .about {
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: minmax($about-img-min-width, $about-img-max-width) 1fr;
+    grid-template-rows: auto;
+
+    @media (max-width: $about-wrap-max-width) {
+        grid-template-columns: 1fr;
+    }
+
     justify-content: space-between;
 
     margin-left: auto;
@@ -14,8 +20,11 @@
         flex: 1 1 38%;
         align-self: center;
 
-        min-width: 250px;
-        max-width: 500px;
+        width: 100%;
+        height: auto;
+
+        max-width: $about-img-max-width;
+        min-width: $about-img-min-width;
 
         margin-left: auto;
         margin-right: auto;
