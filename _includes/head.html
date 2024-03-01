@@ -14,9 +14,11 @@
         {% else if site.keywords %}
         <meta name="keywords" content="{{ site.keywords }}">
         {% endif %}
-
+        <meta name="robots" content="index, follow">
         {% seo %}
     {% endif %}
+
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="{{ "/feed.xml" | absolute_url }}">
 
     <!-- Preload -->
     <link rel="preload" as="font" href="{{ "/assets/font/opensans/opensans.woff2" | relative_url }}" type="font/woff2" crossOrigin="anonymous">
