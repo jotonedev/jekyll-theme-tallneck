@@ -21,7 +21,6 @@ threads_url: https://example.com/
 x_url: https://example.com/
 telegram_url: https://example.com/
 
-about_image: "/assets/images/about.webp"
 defaults:
   - scope:
       type: "posts"
@@ -42,8 +41,6 @@ feed:
 sass:
   style: compressed
   sass_dir: _sass
-
-#cloudflare: "bb92f520037c4286aea634050df09d74"
 
 # Build settings
 theme: jekyll-theme-tallneck
