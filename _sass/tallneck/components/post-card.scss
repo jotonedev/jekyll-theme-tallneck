@@ -34,11 +34,10 @@
   border: 3px solid transparent;
   border-image: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary)) 1;
 
-  transition: 0.4s;
+  transition: 0.4s ease;
   &:hover {
     box-shadow: 0 0 10px 0 var(--border-primary);
     border-image: linear-gradient(45deg, var(--accent-secondary), var(--accent-primary)) 1;
-    transition: 0.4s;
   }
 
   .post-card--link {
