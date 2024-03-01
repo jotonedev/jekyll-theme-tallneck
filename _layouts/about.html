@@ -8,7 +8,6 @@ layout: base
     <h1>About me</h1>
     {% endif %}
 
-    {% if site.social %}
     <nav class="about-social no_print">
         {% if site.github_url %}
         <a href="{{ site.github_url }}" title="GitHub" target="_blank" rel="noopener">
@@ -96,12 +95,13 @@ layout: base
         </a>
         {% endif %}
     </nav>
-    {% endif %}
 
     <div class="about">
+        {% if page.image %}
         <div class="about--img">
-            <img src="{{ site.about_image | relative_url }}" alt="About me" width="500px" height="500px">
+            <img src="{{ page.image | relative_url }}" alt="About me" width="500px" height="500px">
         </div>
+        {% endif %}
         <div class="about--content">
             {{ content }}
         </div>
