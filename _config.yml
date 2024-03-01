@@ -7,7 +7,7 @@ author: John Toniutti
 keywords: "tallneck, test, jekyll, theme, jekyll-theme-tallneck"
 tagline: "Tallneck test | This a tagline"
 description: "Preview for the theme Tallneck for Jeckyll."
-url: "https://jotonedev.github.io/tallneck-test"
+url: "https://jekyll-theme-tallneck.pages.dev/"
 
 social: true
 email: "test@example.com"
@@ -21,13 +21,13 @@ threads_url: https://example.com/
 x_url: https://example.com/
 telegram_url: https://example.com/
 
-about_image: "/assets/image/about.webp"
+about_image: "/assets/images/about.webp"
 defaults:
   - scope:
       type: "posts"
     values:
       layout: "post"
-      image: "/assets/image/default.webp"
+      image: "/assets/images/default.webp"
       seo:
         type: BlogPosting
 

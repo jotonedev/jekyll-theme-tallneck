@@ -2,7 +2,7 @@
 
 Tallneck is a Jekyll theme for blogs. It is a simple and clean theme with a focus on the responsiveness. Also js free.
 
-Preview: [https://jotonedev.github.io/jekyll-theme-tallneck/](https://jotonedev.github.io/jekyll-theme-tallneck/)
+Preview: [https://jekyll-theme-tallneck.pages.dev/](https://jekyll-theme-tallneck.pages.dev/)
 
 ## Installation
 
@@ -58,10 +58,10 @@ theme: jekyll-theme-tallneck
     - [privacy.md](privacy.md)
     - [terms.md](terms.md)
 
-4. Create the `assets/image` folder and put a replacement for the following images:
+4. Create the `assets/images` folder and put a replacement for the following images:
     - `favicon.ico` and `favicon.svg` that will be used as the favicon.
     - `logo.svg` that will be used as the home button.
-    - `pwa_icon.svg`, `pwa_icon_x512.png`, `pwa_icon_x96.png` that will be used as the PWA icon. ([https://maskable.app/editor](https://maskable.app/editor) can be used to create the maskable icon)
+    - `pwa_icon.svg`, `pwa_icon_x512.png`, `pwa_icon_x128.png`, `pwa_icon_x96.png` that will be used as the PWA icon. ([https://maskable.app/editor](https://maskable.app/editor) can be used to create the maskable icon)
 5. In the `assets` folder, create the sitemanifest.json file and edit it to your liking.
 6. [Optional] Customize the theme by creating the `_sass` folder and editing `custom_variables.scss` and `custom_styles.scss` files.
 7. Edit the `_config.yml` file to your liking (you can use the [config](/_config.yml) file in this repo as a template).
@@ -77,7 +77,7 @@ layout: post   # Optional, post is default
 title:  "First post!"
 subtitle: "Written in Go."  # Optional
 date:   2023-01-16 17:40:28 +0100
-image: /assets/image/golang.jpg  # Optional
+image: /assets/images/golang.jpg  # Optional
 ---
 ```
 
