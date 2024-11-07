@@ -1,8 +1,11 @@
+@use "variables";
+@use "font";
+
 /*
  * Base
 */
 html {
-  min-width: $min-width;
+  min-width: variables.$min-width;
 }
 
 *,
@@ -14,8 +17,8 @@ html {
 body {
   height: 100%;
 
-  font-size: $base-font-size;
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  font-size: variables.$base-font-size;
+  font: variables.$base-font-weight #{variables.$base-font-size}/#{variables.$base-line-height} variables.$base-font-family;
   color: var(--text-primary);
 
   text-rendering: optimizeLegibility;
@@ -30,7 +33,7 @@ body {
 
 main {
   display: block;
-  max-width: $main-max-width;
+  max-width: variables.$main-max-width;
 }
 
 a {
@@ -79,7 +82,7 @@ abbr[title] {
 */
 pre,
 code {
-  font-family: $code-font-family;
+  font-family: variables.$code-font-family;
   font-size: 0.9em;
   border: 1px solid var(--border-secondary);
   border-radius: 3px;
@@ -115,7 +118,7 @@ pre {
 */
 table {
   max-width: 100%;
-  text-align: $table-text-align;
+  text-align: variables.$table-text-align;
   border-collapse: collapse;
   border: 1px solid var(--border-primary);
 

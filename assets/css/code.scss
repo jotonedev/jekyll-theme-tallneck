@@ -3,4 +3,5 @@
 
 @charset "utf-8";
 
-@import "light_code", "dark_code";
+@use "light_code";
+@use "dark_code";

@@ -1,3 +1,5 @@
+@use "variables";
+
 .page-footer {
   position: relative;
   padding-left: 1rem;
@@ -41,7 +43,7 @@
 }
 
 .footer-hr {
-  max-width: $main-max-width + calc($content-width-overflow/2);
+  max-width: variables.$main-max-width + calc(variables.$content-width-overflow/2);
   border: 0;
   border-top: 1px solid var(--border-primary);
 

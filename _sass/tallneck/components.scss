@@ -1,1 +1,4 @@
-@import "components/post", "components/post-card", "components/post-preview", "components/about.scss";
+@forward "components/post"; 
+@forward "components/post-card"; 
+@forward "components/post-preview"; 
+@forward "components/about.scss";

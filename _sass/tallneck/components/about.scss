@@ -1,11 +1,9 @@
+@use "../variables";
+
 .about {
     display: grid;
-    grid-template-columns: minmax($about-img-min-width, $about-img-max-width) 1fr;
+    grid-template-columns: minmax(variables.$about-img-min-width, variables.$about-img-max-width) 1fr;
     grid-template-rows: auto;
-
-    @media (max-width: $about-wrap-max-width) {
-        grid-template-columns: 1fr;
-    }
 
     justify-content: space-between;
 
@@ -15,6 +13,10 @@
     align-items: center;
 
     gap: 20px;
+
+    @media (max-width: variables.$about-wrap-max-width) {
+        grid-template-columns: 1fr;
+    }
     
     .about--img {
         flex: 1 1 38%;
@@ -23,8 +25,8 @@
         width: 100%;
         height: auto;
 
-        max-width: $about-img-max-width;
-        min-width: $about-img-min-width;
+        max-width: variables.$about-img-max-width;
+        min-width: variables.$about-img-min-width;
 
         margin-left: auto;
         margin-right: auto;

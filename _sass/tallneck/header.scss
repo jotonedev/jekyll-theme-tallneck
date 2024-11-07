@@ -1,3 +1,5 @@
+@use "variables";
+
 .page-header {
   position: relative;
   z-index: 100;
@@ -22,7 +24,7 @@
     width: 100%;
     height: 100%;
 
-    max-width: $main-max-width - $content-width-overflow;
+    max-width: variables.$main-max-width - variables.$content-width-overflow;
 
     display: flex;
     justify-content: space-between;

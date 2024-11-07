@@ -1,4 +1,7 @@
-@import "footer", "header";
+@use "variables";
+@use "footer";
+@use "header";
+
 
 .page-main {
   position: relative;
@@ -45,7 +48,7 @@
 }
 
 .content-width {
-  max-width: $content-width;
+  max-width: variables.$content-width;
   margin-left: auto;
   margin-right: auto;
 }
