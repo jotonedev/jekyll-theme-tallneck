@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-tallneck"
-  spec.version       = "0.2.9"
+  spec.version       = "0.2.10"
   spec.authors       = ["John Toniutti"]
   spec.email         = ["john.toniutti@gmail.com"]
 
@@ -17,9 +17,9 @@ Gem::Specification.new do |spec|
   end
   
   spec.add_runtime_dependency "jekyll", ">= 4.0", "< 5.0"
-  spec.add_runtime_dependency "jekyll-feed", "~> 0.17"
-  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.8"
-  spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
+  spec.add_runtime_dependency "jekyll-feed", ">= 0.17", "< 1.0"
+  spec.add_runtime_dependency "jekyll-seo-tag", ">= 2.8", "< 3.0"
+  spec.add_runtime_dependency "jekyll-sitemap", ">= 1.4", "< 2.0"
 
   spec.add_development_dependency "bundler"
 end
