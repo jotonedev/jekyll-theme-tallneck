@@ -16,13 +16,13 @@
     padding-right: 2rem;
   }
 
-  @media (max-width: 800px) and (min-width: 600px) {
+  @media (max-width: 800px) and (min-width: 680px) {
     grid-template-columns: 1fr 1fr;
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 680px) {
     grid-template-columns: 1fr;
   }
 
@@ -30,7 +30,6 @@
 
 .post-card {
   max-width: variables.$card-max-width;
-  
 
   vertical-align: middle;
 
