@@ -1,0 +1,18 @@
+@use "../variables";
+
+/* Modern outline button */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-secondary);
+  background-color: transparent;
+  color: var(--text-primary);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: var(--border-secondary);
+    color: var(--text-primary);
+  }
+}
