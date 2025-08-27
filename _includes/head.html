@@ -22,8 +22,8 @@
 
     <!-- Preload -->
     <link rel="preload" as="style" href="{{ "/assets/css/style.css" | relative_url }}">
-    <link rel="preload" as="font" type="font/woff2" href="{{ "/assets/fonts/opensans/open-sans-v40-latin_latin-ext_math_symbols-700.woff2" | relative_url }}">
-    <link rel="preload" as="font" type="font/woff2" href="{{ "/assets/fonts/opensans/open-sans-v40-latin_latin-ext_math_symbols-regular.woff2" | relative_url }}">
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="{{ "/assets/fonts/opensans/open-sans-v40-latin_latin-ext_math_symbols-700.woff2" | relative_url }}">
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="{{ "/assets/fonts/opensans/open-sans-v40-latin_latin-ext_math_symbols-regular.woff2" | relative_url }}">
     <link rel="preload" as="image" type="image/svg+xml" href="{{ "/assets/images/logo.svg" | relative_url }}">
 
     <!-- CSS stylesheets -->
@@ -40,7 +40,7 @@
     
     <!-- PWA -->
     <meta name="theme-color" content="#282828"/>
-    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="manifest" href="/assets/sitemanifest.json">
     <link rel="apple-touch-icon" sizes="512x512" href="/assets/images/pwa_icon_x512.png">
