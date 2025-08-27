@@ -34,6 +34,7 @@ body {
 main {
   display: block;
   max-width: variables.$main-max-width;
+  margin-top: variables.$header-height;
 }
 
 a {
